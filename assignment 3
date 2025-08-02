@@ -1,0 +1,74 @@
+O Calculator
+
+
+
+class maths {
+    int A ;
+    int B;
+   String S;
+    public maths(int A,int B,String S){
+        this.A=A;
+        this.B=B;
+        this.S=S;n
+    }
+    public int let(){
+        if(S.equals("+")){
+            return A+B;
+        }
+        else if(S.equals("-")){
+            return A-B;
+        }
+        else if(S.equals("*")){
+        return A * B;
+        }
+        else {
+            if(B!=0){
+           return A / B;
+            }
+        }
+        return 0;
+    } 
+}
+public class Main{
+    
+    public static void main(String []args){
+        maths a=new maths(2,5,"+");
+        int result =a.let();
+      System.out.print(result);
+    }
+}
+
+/////////////////////////////////////////////////////////////
+P 
+
+
+ class maths {
+   int a;
+  
+   maths(int a){
+       this.a=a;
+
+   }
+   public String is(){
+       String numberstr=String.valueOf(a); //String التحويل الي 
+       char firstChar= numberstr.charAt(0);//firsChar اخذ ال
+       int firstDigit= Character.getNumericValue(firstChar);
+       if(firstDigit%2==0){
+           return "even";
+       }
+       else {
+           return "odd";
+       }
+      
+   }
+}
+public class Main{
+    
+    public static void main(String []args){
+        maths num=new maths(5);
+        String result =num.is();
+        System.out.print(result);
+    }
+}
+
+
